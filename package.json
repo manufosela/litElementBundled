@@ -1,0 +1,20 @@
+{
+  "name": "lit-element-bundled",
+  "version": "1.0.0",
+  "description": "If you need to use your lit-elements webcomponents without the magic of the polymer-cli you can use this file. The minimized version has only 27Kb and the no-minimized version 55Kb.",
+  "main": "litElementBundled.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manufosela/litElementBundled.git"
+  },
+  "keywords": ["litElement", "webcomponents"],
+  "author": "manufosela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manufosela/litElementBundled/issues"
+  },
+  "homepage": "https://github.com/manufosela/litElementBundled#readme"
+}
