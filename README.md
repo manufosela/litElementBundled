@@ -7,16 +7,24 @@ The minimized version has only 27Kb and the no-minimized version 55Kb.
 
 ```html
 <!doctype html>
-<html lang="en">
+<html>
   <head>
+    <title>circle-picture demo</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <title>your component demo</title>
-    <script src="litElementBundled.min.js"></script>
-    <script type="module" src="your-webcomponent.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="./litElementBundled.js"></script>
+    <script>
+        window.onload = function(){
+            var tag = document.createElement("script");
+            tag.type = "module";
+            tag.src = "../my-element.js";
+            document.getElementsByTagName("head")[0].appendChild(tag);
+        };
+    </script>
   </head>
+
   <body>
-    <your-webcomponent></your-webcomponent>
+    <my-element></my-element>
   </body>
 </html>
 ```
